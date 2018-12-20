@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="da">
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../images/logo_browser_icon.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/logo_browser_icon.jpg"/>
+	<link rel="apple-touch-icon" sizes="57x57" href="../images/logo_browser_icon.jpg"/>
+	<link rel="mask-icon" href="../images/logo_browser_icon.jpg"/>
+	<title>AlexanderJS - Portfolio</title>
+	<link href="../css/large.css" rel="stylesheet">
+	<link href="../css/medium.css" rel="stylesheet" media="screen and (max-width:768px)">
+	<link href="../css/small.css" rel="stylesheet" media="screen and (max-width:500px)">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+
+<body>
+	
+	<header id="header">
+	
+		<div class="container">
+
+			<div class="logo">
+				<a href="../index.html">
+					<img src="../images/logo.png" alt="Logo" class="logo_img"/>
+				</a>
+			</div><!-- logo end -->
+
+			<div class="content_right">
+
+				<input type="checkbox" id="op" />
+			
+				<div class="lower" onClick="test()">
+					<label for="op">&#9776;</label>
+				</div>
+				
+				<div id="nav_menu">
+					
+					<label for="op" class="remove" id="cross_close">&#10005;</label>
+
+					<nav>
+
+						<ul class="ul_menu">
+							<li><a href="../index.html">Forside</a></li>
+							<li><a href="om.html">Om</a></li>
+							<li><a href="projekter.html">Projekter</a></li>
+							<li><a href="laering.html">Læring</a></li>
+							<li><a href="kontakt.html" class="current">Kontakt</a></li>
+						</ul><!--ul_menu end -->
+
+					</nav>
+
+				</div>
+					
+			</div><!-- content_right end -->
+
+		</div><!-- container end -->
+		
+	</header>
+	
+	<div class="container container_content">
+	
+		<h2>Kontakt</h2>
+	
+		<div class="kontakt_left">
+			
+			<p>Jeg kan kontaktes via. nedenståenden information eller blot ved at udfylde kontaktformularen på denne side.</p>
+			
+			<div class="kontakt_info margin">
+			
+				<a class="btn_con btn-icon btn-phone">
+					<i class="fas fa-phone"></i>
+					<span>+45 23 66 24 38</span>
+				</a>
+				
+			</div><!-- kontakt_info end -->
+			
+			<div class="kontakt_info">
+			
+				<a class="btn_con btn-icon btn-address shadow" href="https://goo.gl/maps/5ybUQLXvBFF2" target="_blank" >
+					<i class="fas fa-map-marked-alt"></i>
+					<span>Jølbyvej 21, 2610 Rødvore</span>
+				</a>
+				
+			</div><!-- kontakt_info end -->
+			
+			<div class="kontakt_info">
+			
+				<a class="btn_con btn-icon btn-linkedin shadow" href="https://www.linkedin.com/in/alexander-juul-s%C3%B8rensen-449a3869/" target="_blank">
+					<i class="fab fa-linkedin-in"></i>
+					<span>Alexander Juul Sørensen</span>
+				</a>
+				
+			</div><!-- kontakt_info end -->
+
+		</div><!-- kontakt_left end -->
+		
+		
+		<div class="kontakt_right">
+			
+		  <form action="mailto:juul.94@hotmail.com" method="post" enctype="text/plain">
+			  
+			<label for="fullname">Navn</label>
+			<input type="text" id="fullname" name="fullname" required>
+			  
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="subject">Emne</label>
+			<input type="text" id="subject" name="subject" required>
+
+			<label for="message">Besked</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<input type="submit" value="Send" class="btn_send">
+		  </form>
+		
+		</div><!-- kontakt_right end -->
+		
+	</div>
+
+	<!-- jQuery/Javascript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="../js/burgermenu.js"></script>
+	<script src="../js/form_error_translate.js"></script>
+	<script src="../js/fixed_header.js"></script>
+
+</body>
+</html>

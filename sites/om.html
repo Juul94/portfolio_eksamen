@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="da">
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../images/logo_browser_icon.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/logo_browser_icon.jpg"/>
+	<link rel="apple-touch-icon" sizes="57x57" href="../images/logo_browser_icon.jpg"/>
+	<link rel="mask-icon" href="../images/logo_browser_icon.jpg"/>
+	<title>AlexanderJS - Portfolio</title>
+	<link href="../css/large.css" rel="stylesheet">
+	<link href="../css/medium.css" rel="stylesheet" media="screen and (max-width:768px)">
+	<link href="../css/small.css" rel="stylesheet" media="screen and (max-width:500px)">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+	
+	<header id="header">
+	
+		<div class="container">
+
+			<div class="logo">
+				<a href="../index.html">
+					<img src="../images/logo.png" alt="Logo" class="logo_img"/>
+				</a>
+			</div><!-- logo end -->
+
+			<div class="content_right">
+
+				<input type="checkbox" id="op" />
+			
+				<div class="lower" onClick="test()">
+					<label for="op">&#9776;</label>
+				</div>
+				
+				<div id="nav_menu">
+					
+					<label for="op" class="remove" id="cross_close">&#10005;</label>
+
+					<nav>
+
+						<ul class="ul_menu">
+							<li><a href="../index.html">Forside</a></li>
+							<li><a href="om.html" class="current">Om</a></li>
+							<li><a href="projekter.html">Projekter</a></li>
+							<li><a href="laering.html">Læring</a></li>
+							<li><a href="kontakt.html">Kontakt</a></li>
+						</ul><!--ul_menu end -->
+
+					</nav>
+
+				</div>
+					
+			</div><!-- content_right end -->
+
+		</div><!-- container end -->
+		
+	</header>
+	
+	<div class="container container_content">
+	
+		<h2>Om</h2>
+		
+		<div class="om_column">
+			
+			<div class="om_left">
+
+				<h3>Design</h3>
+				
+				<p class="space">Lige siden jeg var 13 år, har jeg været meget optaget af design og generelt bare at "lege" med Photoshop. Det var, og er en hobby, en passion som nu bliver til en livsstil.</p>
+				<p class="space">Det hele startede med at nogle venner skulle have redigeret nogle billeder eller have lavet nogle overlays til deres streams. Derfra lærte jeg mig selv via nettet hvad der skulle kunnes for at udføre den opgave jeg nu fik for.</p>
+
+			</div><!-- om_left end -->
+
+			<div class="om_right">
+
+				<img src="../images/illu_design.png" alt="Illustration af design" class="om_img" draggable="false" />
+
+			</div><!-- om_right end -->
+		
+		</div><!-- om_column end -->
+		
+		<div class="om_column margin">
+			
+			<div class="om_left">
+
+				<h3>Programmering</h3>
+				
+				<p class="space">Efter min gymnasielle uddannelse på HF valgte jeg uddannelsen som Web-Integrator på Roskilde Tekniske Skole (Som nu hedder Webudvikler) I starten af denne uddannelse skulle vi vælge mellem PHP eller ASP .NET. </p>
+				<p class="space">Efter en masse fremlæggelser fra andre studerende om hvorfor man skulle vælge det ene frem for det anden kom jeg frem til en beslutning. Jeg vælgte det sværeste for at udfordre mig selv mest muligt. Jeg afsluttede min sidste eksamen med et flot 12 tal, og et gennemsnit på 11.4.</p>
+
+			</div><!-- om_left end -->
+
+			<div class="om_right">
+
+				<img src="../images/illu_kode.png" alt="Illustration af kodning" class="om_img" draggable="false" />
+
+			</div><!-- om_right end -->
+		
+		</div><!-- om_column end -->
+			
+	</div>
+	
+	<!-- jQuery/Javascript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="../js/burgermenu.js"></script>
+	<script src="../js/fixed_header.js"></script>
+
+</body>
+</html>

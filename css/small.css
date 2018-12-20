@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+/********** PRIMARY **********/
+
+body {
+	background: none;
+}
+
+.logo_img {
+	width:25%;
+	margin-top:5px;
+	padding-bottom:0;
+}
+
+.logo {
+	height:65px;
+}
+
+h2 {
+    font-size: 175%;
+    padding-bottom: 25px;
+}
+
+header {
+	padding-top:5px;
+}
+
+/********** FORSIDE **********/
+
+.portrait {
+	width:60%;
+}
+
+@keyframes text {
+	0% {
+		margin-bottom: 25px;
+	}
+}
+
+.text1 {
+	background: none;
+	font-size:135%;
+}
+
+.text2 {
+	font-size:115%;
+}
+
+/********** OM **********/
+
+.om_img {
+	width:50%;
+	margin-top:5%;
+	padding:0;
+}
+
+/********** PROJEKTER: ALLE **********/
+
+.project_img_div {
+	width:80%;
+}
+
+.project_text {
+	width:100%;
+	margin-top:20px;
+	padding-left:0;
+}
+
+.project_img_div.hidden {
+	width:100%;
+	padding-top:20px;
+}
+
+.project_text2 {
+	width:100%;
+}
+
+.project_text2 {
+	padding-top:10px;
+	min-height:175px;
+}
+
+.img_icons {
+	width:25px;
+}
+
+.project_wrapper {
+	padding-bottom:20px;
+}
+
+.projekt_2 {
+	margin-top:30px;
+	margin-bottom:30px;
+}
+
+.projekt_white {
+	margin-top:25px;
+	margin-bottom:30px;
+}
+
+/********** PROJEKTER: ENKELTE **********/
+
+.one_project_img_right, .one_project_img_left {
+	display:none;
+	width:100%;
+}
+
+.div_udvikling {
+	width:100%;
+}
+
+.switch-button {
+	width:100%;
+	height:45px;
+	will-change: transform;
+}
+
+/********** LÆRING **********/
+
+.flow_img, .flow_img_2 {
+	width:100%;
+	margin-top:20px;
+	margin-bottom:25px;
+}
+
+.laering_text {
+	width:100%;
+}
+
+/********** KONTAKT **********/
+
+.kontakt_left, .kontakt_right {
+	width:100%;
+}
+
+
+
+

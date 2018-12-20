@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="da">
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../../images/logo_browser_icon.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../images/logo_browser_icon.jpg"/>
+	<link rel="apple-touch-icon" sizes="57x57" href="../../images/logo_browser_icon.jpg"/>
+	<link rel="mask-icon" href="../../images/logo_browser_icon.jpg"/>
+	<title>AlexanderJS - Portfolio</title>
+	<link href="../../css/large.css" rel="stylesheet">
+	<link href="../../css/medium.css" rel="stylesheet" media="screen and (max-width:768px)">
+	<link href="../../css/small.css" rel="stylesheet" media="screen and (max-width:500px)">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+	
+	<header id="header">
+	
+		<div class="container">
+
+			<div class="logo">
+				<a href="../../index.html">
+					<img src="../../images/logo.png" alt="Logo" class="logo_img"/>
+				</a>
+			</div><!-- logo end -->
+
+			<div class="content_right">
+
+				<input type="checkbox" id="op" />
+			
+				<div class="lower" onClick="test()">
+					<label for="op">&#9776;</label>
+				</div>
+				
+				<div id="nav_menu">
+					
+					<label for="op" class="remove" id="cross_close">&#10005;</label>
+
+					<nav>
+
+						<ul class="ul_menu">
+							<li><a href="../../index.html">Forside</a></li>
+							<li><a href="../om.html">Om</a></li>
+							<li><a href="../projekter.html" class="current">Projekter</a></li>
+							<li><a href="../laering.html">Læring</a></li>
+							<li><a href="../kontakt.html">Kontakt</a></li>
+						</ul><!--ul_menu end -->
+
+					</nav>
+
+				</div>
+					
+			</div><!-- content_right end -->
+
+		</div><!-- container end -->
+		
+	</header>
+	
+	<div class="container container_content">
+		
+		<button onclick="topFunction()" id="totop" title="Go to top">&uarr;</button>
+	
+		<h2>Eksamens Projekt</h2>
+		
+		<p class="p_breadcrumb"><a href="../projekter.html" class="a_breadcrumb">Projekter</a> / Eksamens Projekt</p>
+		
+		<div class="one_project">
+			
+			<a href="../../pdf/opgavebeskrivelse/eksamensprojekt_1sem.pdf" target="_blank" class="a_style">
+				<button class="btn"><i class="far fa-file-pdf"></i>Se Opgavebeskrivelse</button>
+			</a>
+				
+			<div class="switch-button">
+				<span class="btn_active"></span>
+				<button class="switch-button-case left active-case" onClick="switchDiv('shown');">Oprindelige</button>
+				<button class="switch-button-case right" onClick="switchDiv('hidden');">Remake</button>
+			</div>
+			
+			<div id="oprindelig">
+				
+				<div class="project_right_content">
+					<h3>Oprindelige Version</h3>
+					
+					<div class="one_project_img_left hidden">
+						<a data-fancybox-trigger="preview1" href="javascript:;">
+							<img src="../../images/bygdinportfolio.png" alt="Projekt billede" draggable="false">
+						</a>
+						
+						<a href="../../images/bygdinportfolio.png" data-fancybox="preview1" ></a>
+					</div><!-- one_project_img end -->
+					
+					<p class="space">Den oprindelige løsning kan ses i Flow 1 og Flow 2:</p>
+					<p class="space"><a href="dromdinportfolio.html" class="a_style"><i class="fas fa-link"></i>Se den oprindelige Adobe XD version</a></p>
+					<p class="space"><a href="bygdinportfolio.html" class="a_style"><i class="fas fa-link"></i>Se den oprindelige online version</a></p>
+					
+				</div><!-- project_left_content end -->
+
+				<div class="one_project_img_left">
+					<a data-fancybox-trigger="preview2" href="javascript:;">
+						<img src="../../images/bygdinportfolio.png" alt="Projekt billede" draggable="false">
+					</a>
+						
+					<a href="../../images/bygdinportfolio.png" data-fancybox="preview2" ></a>
+				</div><!-- one_project_img end -->
+
+			</div><!-- oprindelig end -->
+			
+			<div id="remake" style="display:none;">
+
+				<div class="project_right_content">
+					<h3>Remake Version</h3>
+					
+					<div class="one_project_img_left hidden">
+						<a data-fancybox-trigger="preview3" href="javascript:;">
+							<img src="../../images/bygdinportfolio_remake.png" alt="Projekt billede" draggable="false">
+						</a>
+						
+						<a href="../../images/bygdinportfolio_remake.png" data-fancybox="preview3" ></a>
+					</div><!-- one_project_img end -->
+					
+					<p class="space">Med udgangspunkt i min "gamle" portfolio, lavede jeg en brugertest og tog udgangspunkt i de kriterier jeg fik. Jeg fik en masse nyttig respons som jeg har valgt at arbejde og videreudvikle, så min portfolio blev optimeret. Nedenfor på denne side kan du se yderligere information for hele mit udviklingsforløb for min 1. semester eksamen.</p>
+				</div><!-- project_left_content end -->
+
+				<div class="one_project_img_left">
+					<a data-fancybox-trigger="preview4" href="javascript:;">
+						<img src="../../images/bygdinportfolio_remake.png" alt="Projekt billede" draggable="false">
+					</a>
+						
+					<a href="../../images/bygdinportfolio_remake.png" data-fancybox="preview4" ></a>
+				</div><!-- one_project_img end -->
+				
+				<div class="div_udvikling">
+
+					<h3>Udviklingsdokumentation</h3>
+
+					<h4 class="extraspace">Brugertest</h4>
+					<p class="space">Som det første lavede jeg en brugertest af min portfolio jeg kodede i flow 2. I den brugertest står der en række ændringer som kan forbedre mit website. Til sidst i dokumentet står der hvilke ændringer jeg har foretaget mig og hvorfor:
+					<a href="../../pdf/udviklingsdokumentation/brugertestafgamleportfolio.pdf" target="_blank" class="a_style">Se brugertest</a></p>
+
+					<h4 class="extraspace">Projektplanlægning</h4>
+					<p class="space">Min brugertest hjalp mig videre med hvad der skulle ændres på. Så dertil skulle jeg i gang med at lave modeller så som PBS, WBS samt Gantt-kort, for at skabe mig et endnu bedre overblik over min nye portfolio:</p>
+
+				</div><!-- div_udvikling end -->
+
+				<div class="udviklingsdokumentation_img">
+
+					<a data-fancybox-trigger="preview40" href="javascript:;" class="a_style">
+						<p>- Gantt-Kort</p>
+					</a>
+
+					<a href="../../images/gantt.jpg" data-fancybox="preview40"></a>
+
+					<a data-fancybox-trigger="preview41" href="javascript:;" class="a_style">
+						<p>- PBS</p>
+					</a>
+
+					<a href="../../images/pbs.jpg" data-fancybox="preview41"></a>
+
+					<a data-fancybox-trigger="preview42" href="javascript:;" class="a_style">
+						<p>- WBS</p>
+					</a>
+
+					<a href="../../images/wbs.jpg" data-fancybox="preview42" ></a>
+
+				</div><!-- udviklingsdokumentation_img end -->
+
+				<div class="div_udvikling">
+
+					<h4>Wireframes og Prototype</h4>
+					<p class="space">Efter udviklingen af diverse modeller valgte jeg at lave wireframes for at finde en bedre opsætning til mit nye website. Jeg har lavet en version til både desktop og mobil, da mit site skal være fuld responsiv:</p>
+					<p>- <a href="https://xd.adobe.com/view/d29dd2aa-6094-44e2-7946-72a4650a87cd-a4ac/" target="_blank" class="a_style">Desktop Wireframes</a></p>
+					<p>- <a href="https://xd.adobe.com/view/5d4d7772-b875-4c9c-5436-3d92bd4fad0f-2b7c/" target="_blank" class="a_style">Mobile Wireframes</a></p>
+
+					<p class="space">Ud fra mine wireframes kunne jeg nu lave en prototype: (Designet i Photoshop)</p>
+					<p><a href="https://xd.adobe.com/view/329c4d52-8a12-44d2-488d-01772d2fc989-44ad/" target="_blank" class="a_style">Se Adobe XD Prototype</a></p>
+
+					<p class="space">Da jeg havde designet mine wireframes samt XD og derved skulle til at programmere det, kom jeg frem til et lidt andet design, da jeg synes det så alt for kedeligt og rodet ud. Derfor foretog jeg mig ændringer, så jeg blev helt tilfreds.</p>
+
+					<h4 class="extraspace">Informationsarkitektur</h4>
+
+					<a data-fancybox-trigger="preview43" href="javascript:;" class="a_style">
+						<p class="space">- Sitemap</p>
+					</a>
+
+					<a href="../../images/sitemap.jpg" data-fancybox="preview43"></a>
+
+					<p class="space">Min mappestruktur er sat op således:</p>
+					<p class="space">- Sider: root/sites/ - Dog er selve projekterne er delt op for sig selv i: root/sites/projekter/</p>
+					<p>- CSS: root/css/ - Jeg har delt mine stylesheet's op i 3 forskellige, som er small, medium og large.</p>
+					<p>- Billeder: root/images/</p>
+					<p>- PDF'er: root/pdf/ og så enten: opgavebeskrivelse, oprindeligelosning, remake eller udviklingsdokumentation</p>	
+
+					<p class="space">Jeg har 1 hovednavigation som fører alle steder hen. Bortset fra det enkelte projekt. Der skal du først ind på "Projekter". Derudover har jeg en 'brødkrummesti' når man vælger et projekt, får at give et bedre overblik på hvor man befinder sig på stiden. På stien kan man også klikke for at komme til den valgte side.</p>
+
+					<p class="space">Alle mine links har en anden farve end sort, som man ved det er noget man kan klikke på. Når man holder over linket kommer der en streg (underline) frem under teksten.</p>
+
+					<h4 class="extraspace">Farver og typeface</h4>
+					<p class="space">Jeg har valgt at gå med mine egne yndlingsfarver med en kontrast af en hvid baggrund. Denne portfolio skal afspejle mig, så derfor har jeg valgt disse 4 gennemgående farver:</p>
+					<p class="space">- Hvid (<span class="color_white">#FFFFFF</span>): Farven hvid er ofte forbundet med ren, frisk og god. På siden vil jeg gerne vise en "ren" og brugervenlig side, derfor bruger jeg denne hvide farve.</p>
+					<p class="space">- Orange (<span class="color_orange">#FFA500</span>): Den orange farve er en lys og varm farve. Dette er en stor kontrast til den hvide, som giver en virkelig flot farve-kombination. Jeg har brugt denne farve for ikke at give en "kold" og "tom" side pga. den hvide farve.</p>
+					<p class="space">- Blå (<span class="color_blue">#0072C6</span>):  Den blå farve er en beroligende farve, der viser kreativitet og intelligens. Det er en farve jeg synes personligt skinner igennem med den orange og hvide farve. Dermed symboliserer den også styrke og tillid. Det er altid et god budskab at signalere det til sin fremtidige kunder eller arbejdsgiver.</p>
+					<p class="space">- Lyse Grå (<span class="color_grey">#0072C6</span>): Den lyse-grå farve jeg har brugt som en streg igennem min baggrund er med til at give det hele et lidt andet perspektiv. Det er en neutral farve som er overgangen mellem dem hvide og sorte. Da jeg bruge hvid som baggrund og sort til alt text-indhold, tænkte jeg en mellemtone ville passe perfekt ind.</p>
+					<p class="space">Som type-face har jeg valgt en simpelt og meget populær google font der hedder 'Open Sans', der bliver brugt på over 18.000.000 sider. Jeg kan gode lide at typefacen er enkel og simpelt, og samtidig er denne type-face utrolig brugervenlig, da den netop bliver brugt så meget som den nu gør og er så professionel lavet. Dvs. en ren type-face der har rene linjer, der ikke har "fødder".</p>
+
+					<h4 class="extraspace">Online version og GitHub repository</h4>
+					<p class="space"><a href="https://www.alexanderjs.dk" class="a_style" target="_blank">- Online version: Er denne nye side</a></p>
+					<p><a href="https://github.com/Juul94/portfolio_eksamen" class="a_style" target="_blank">- Se GitHub repository for det nye portfolio</a></p>
+
+				</div><!-- div_udvikling end -->
+				
+			</div><!-- remake end -->
+			
+		</div><!-- one_project end -->
+		
+	</div><!-- container container_content end -->
+
+	<!-- jQuery/Javascript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+	<script src="../../js/burgermenu.js"></script>
+	<script src="../../js/switch_buttons.js"></script>
+	<script src="../../js/fixed_header.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="da">
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../../images/logo_browser_icon.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../images/logo_browser_icon.jpg"/>
+	<link rel="apple-touch-icon" sizes="57x57" href="../../images/logo_browser_icon.jpg"/>
+	<link rel="mask-icon" href="../../images/logo_browser_icon.jpg"/>
+	<title>AlexanderJS - Portfolio</title>
+	<link href="../../css/large.css" rel="stylesheet">
+	<link href="../../css/medium.css" rel="stylesheet" media="screen and (max-width:768px)">
+	<link href="../../css/small.css" rel="stylesheet" media="screen and (max-width:500px)">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+	
+	<header id="header">
+	
+		<div class="container">
+
+			<div class="logo">
+				<a href="../../index.html">
+					<img src="../../images/logo.png" alt="Logo" class="logo_img"/>
+				</a>
+			</div><!-- logo end -->
+
+			<div class="content_right">
+
+				<input type="checkbox" id="op" />
+			
+				<div class="lower" onClick="test()">
+					<label for="op">&#9776;</label>
+				</div>
+				
+				<div id="nav_menu">
+					
+					<label for="op" class="remove" id="cross_close">&#10005;</label>
+
+					<nav>
+
+						<ul class="ul_menu">
+							<li><a href="../../index.html">Forside</a></li>
+							<li><a href="../om.html">Om</a></li>
+							<li><a href="../projekter.html" class="current">Projekter</a></li>
+							<li><a href="../laering.html">Læring</a></li>
+							<li><a href="../kontakt.html">Kontakt</a></li>
+						</ul><!--ul_menu end -->
+
+					</nav>
+
+				</div>
+					
+			</div><!-- content_right end -->
+
+		</div><!-- container end -->
+		
+	</header>
+	
+	<div class="container container_content">
+	
+		<h2>Byg din Portfolio</h2>
+		
+		<p class="p_breadcrumb"><a href="../projekter.html" class="a_breadcrumb">Projekter</a> / Byg din Portfolio</p>
+		
+		<div class="one_project">
+			
+			<a href="../../pdf/opgavebeskrivelse/projekt_bygdinportfolio.pdf" target="_blank" class="a_style">
+				<button class="btn"><i class="far fa-file-pdf"></i>Se Opgavebeskrivelse</button>
+			</a>
+				
+			<div class="switch-button">
+				<span class="btn_active"></span>
+				<button class="switch-button-case left active-case" onClick="switchDiv('shown');">Oprindelige</button>
+				<button class="switch-button-case right" onClick="switchDiv('hidden');">Remake</button>
+			</div>
+
+			<div id="oprindelig">
+				
+				<div class="project_right_content">
+					<h3>Oprindelige Version</h3>
+					
+					<div class="one_project_img_left hidden">
+						<a data-fancybox-trigger="preview9" href="javascript:;">
+							<img src="../../images/bygdinportfolio.png" alt="Projekt billede" draggable="false">
+						</a>
+						
+						<a href="../../images/bygdinportfolio.png" data-fancybox="preview9" ></a>
+					</div><!-- one_project_img end -->
+					
+					<p class="space">Ud fra min Adobe XD prototype fra Flow 1, ændrede jeg en del på opsætningen og selve designet. Der kom en hjemmeside som jeg desværre ville have arbejdet meget mere på. Jeg udfordrede mig selv ved at bruge database for første gang i PHP. Det lykkedes men jeg skulle nok have brugt lidt mere tid på designet. Nedenfor er der 2 links. Et til min online portfolio og et til GitHub:</p>
+					<p class="space"><a href="https://www.AlexanderJS.dk/minportfolio/oprindelig_portfolio" target="_blank" class="a_style"><i class="fas fa-link"></i>Se online version</a></p>
+					
+					<p class="space"><a href="https://github.com/Juul94/minportfolio" target="_blank" class="a_style"><i class="fas fa-link"></i>Se GitHub repository</a></p>
+					
+				</div><!-- project_left_content end -->
+
+				<div class="one_project_img_left">
+					<a data-fancybox-trigger="preview10" href="javascript:;">
+						<img src="../../images/bygdinportfolio.png" alt="Projekt billede" draggable="false">
+					</a>
+						
+					<a href="../../images/bygdinportfolio.png" data-fancybox="preview10" ></a>
+				</div><!-- one_project_img end -->
+
+			</div><!-- oprindelig end -->
+			
+
+			<div id="remake" style="display:none;">
+
+				<div class="project_right_content">
+					<h3>Remake Version</h3>
+					
+					<div class="one_project_img_left hidden">
+						<a data-fancybox-trigger="preview11" href="javascript:;">
+							<img src="../../images/bygdinportfolio_remake.png" alt="Projekt billede" draggable="false">
+						</a>
+						
+						<a href="../../images/bygdinportfolio_remake.png" data-fancybox="preview11" ></a>
+					</div><!-- one_project_img end -->
+					
+					<p class="space">Jeg valgte at lave en brugertest af min portfolio for at viderearbejde med den. Jeg har samlet alt mit arbejde fra projektet, så det er lettere at finde rundt i. Nedenfor kan du se mit eksamens projekt, altså redesign/remake af portfolio samt alt udviklingsdokumentation:</p>
+					<p class="space"><a href="eksamensprojekt.html" class="a_project"><i class="fas fa-link"></i>Se eksamensprojekt</a></p>
+					
+				</div><!-- project_left_content end -->
+
+				<div class="one_project_img_left">
+					<a data-fancybox-trigger="preview12" href="javascript:;">
+						<img src="../../images/bygdinportfolio_remake.png" alt="Projekt billede" draggable="false">
+					</a>
+						
+					<a href="../../images/bygdinportfolio_remake.png" data-fancybox="preview12" ></a>
+				</div><!-- one_project_img end -->
+				
+			</div><!-- remake end -->
+			
+		</div><!-- one_project end -->
+		
+	</div><!-- container container_content end -->
+	
+	<!-- jQuery/Javascript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+	<script src="../../js/burgermenu.js"></script>
+	<script src="../../js/switch_buttons.js"></script>
+	<script src="../../js/fixed_header.js"></script>
+
+</body>
+</html>

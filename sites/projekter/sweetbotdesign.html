@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../../images/logo_browser_icon.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../../images/logo_browser_icon.jpg"/>
+	<link rel="apple-touch-icon" sizes="57x57" href="../../images/logo_browser_icon.jpg"/>
+	<link rel="mask-icon" href="../../images/logo_browser_icon.jpg"/>
+	<title>AlexanderJS - Portfolio</title>
+	<link href="../../css/large.css" rel="stylesheet">
+	<link href="../../css/medium.css" rel="stylesheet" media="screen and (max-width:768px)">
+	<link href="../../css/small.css" rel="stylesheet" media="screen and (max-width:500px)">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+	
+	<header id="header">
+	
+		<div class="container">
+
+			<div class="logo">
+				<a href="../../index.html">
+					<img src="../../images/logo.png" alt="Logo" class="logo_img"/>
+				</a>
+			</div><!-- logo end -->
+
+			<div class="content_right">
+
+				<input type="checkbox" id="op" />
+			
+				<div class="lower" onClick="test()">
+					<label for="op">&#9776;</label>
+				</div>
+				
+				<div id="nav_menu">
+					
+					<label for="op" class="remove" id="cross_close">&#10005;</label>
+
+					<nav>
+
+						<ul class="ul_menu">
+							<li><a href="../../index.html">Forside</a></li>
+							<li><a href="../om.html">Om</a></li>
+							<li><a href="../projekter.html" class="current">Projekter</a></li>
+							<li><a href="../laering.html">Læring</a></li>
+							<li><a href="../kontakt.html">Kontakt</a></li>
+						</ul><!--ul_menu end -->
+
+					</nav>
+
+				</div>
+					
+			</div><!-- content_right end -->
+
+		</div><!-- container end -->
+		
+	</header>
+	
+	<div class="container container_content">
+	
+		<h2>Sweetbot.Design</h2>
+		
+		<p class="p_breadcrumb"><a href="../projekter.html" class="a_breadcrumb">Projekter</a> / Sweetbot.Design</p>
+		
+		<div class="one_project">
+			
+			<a href="../../pdf/opgavebeskrivelse/projekt_sweetbotdesign.pdf" target="_blank" class="a_style">
+				<p><button class="btn"><i class="far fa-file-pdf"></i>Se Opgavebeskrivelse</button></p>
+			</a>
+			
+			<a href="../../pdf/opgavebeskrivelse/projekt_sweetbotdesign_styleguide.pdf" target="_blank" class="a_style">
+				<p><button class="btn"><i class="far fa-file-pdf"></i>Se Styleguide</button></p>
+			</a>
+			
+			<a href="../../pdf/opgavebeskrivelse/projekt_sweetbotdesign_logo.eps" target="_blank" class="a_style">
+				<p><button class="btn"><i class="fas fa-download"></i>Hent Illustrator fil (.eps)</button></p>
+			</a>
+
+			<div class="switch-button">
+				<span class="btn_active"></span>
+				<button class="switch-button-case left active-case" onClick="switchDiv('shown');">Oprindelige</button>
+				<button class="switch-button-case right" onClick="switchDiv('hidden');">Remake</button>
+			</div>
+
+			<div id="oprindelig">
+				
+				<div class="project_right_content">
+					<h3>Oprindelige Version</h3>
+					
+					<div class="one_project_img_left hidden">
+						<a data-fancybox-trigger="preview16" href="javascript:;">
+							<img src="../../images/sweetbotdesign.png" alt="Projekt billede" draggable="false">
+						</a>
+						
+						<a href="../../images/sweetbotdesign.png" data-fancybox="preview16" ></a>
+					</div><!-- one_project_img end -->
+					
+					<p class="space">Dette flow blev man testet på i at samarbejde som en gruppe. Vi valgte den mest "sikre" løsning ved at dele opgaverne op i hvad man hver især var bedst til. Dette kan dog godt have et negativt aspekt eftersom man ikke altid lærer noget nyt af det eller bliver udfordret nok. Men så var det godt at vi altid holdt hinanden opdateret og forklarede hvis der var noget vi ikke forstod.</p>
+					<p class="space">Du kan se min gruppes og mine tanker bag Sweetbot.Design projektet, samt websitet i følgende rapport:</p>
+					<p class="space"><a href="../../pdf/oprindeligelosning/sweetbotdesign.pdf" target="_blank" class="a_style"><i class="far fa-file-pdf"></i>Se den oprindelige løsning</a></p>
+					
+				</div><!-- project_left_content end -->
+
+				<div class="one_project_img_left">
+					<a data-fancybox-trigger="preview17" href="javascript:;">
+						<img src="../../images/sweetbotdesign.png" alt="Projekt billede" draggable="false">
+					</a>
+						
+					<a href="../../images/sweetbotdesign.png" data-fancybox="preview17" ></a>
+				</div><!-- one_project_img end -->
+
+			</div><!-- oprindelig end -->
+			
+			
+			<div id="remake" style="display:none;">
+
+				<div class="project_right_content">
+					<h3>Remake Version</h3>
+					
+					<div class="one_project_img_left hidden">
+						<a data-fancybox-trigger="preview18" href="javascript:;">
+							<img src="../../images/sweetbot_remake.png" alt="Projekt billede" draggable="false">
+						</a>
+						
+						<a href="../../images/sweetbot_remake.png" data-fancybox="preview18" ></a>
+					</div><!-- one_project_img end -->
+					
+					<p class="space">Til vores fremlæggelse fik vi faktisk ikke ret meget respons/kritik til vores responsive website. Men det var dog enkelte små elementer der skulle gøres mindre i mobilversionen, eks. billederne af de ansatte under kontakt-sektionen. Personligt synes jeg det ville se bedre ud at sætte en hr (linje) under hver overskrift for ligesom at give det sektioner, så det har jeg ydermere tilføjet. Ellers handlede det mest om at vi måske i gruppen burde have ændret opgaverne så man tog det man var "dårligst" til - Så man lærte mere.</p> 
+					<p class="space">På følgende link kan du se de små forbedringer jeg har ændret:</p>					
+					<p class="space"><a href="http://alexanderjs.dk/minportfolio/remake/sweetbot_remake" target="_blank" class="a_project"><i class="fas fa-link"></i>Se online version</a></p>
+					<p class="space"><a href="https://github.com/Juul94/sweetbot_remake" target="_blank" class="a_project"><i class="fas fa-link"></i>Se GitHub repository</a></p>
+					
+				</div><!-- project_left_content end -->
+
+				<div class="one_project_img_left">
+					<a data-fancybox-trigger="preview19" href="javascript:;">
+						<img src="../../images/sweetbot_remake.png" alt="Projekt billede" draggable="false">
+					</a>
+						
+					<a href="../../images/sweetbot_remake.png" data-fancybox="preview19" ></a>
+				</div><!-- one_project_img end -->
+				
+			</div><!-- remake end -->
+	
+		</div><!-- one_project end -->
+		
+	</div><!-- container container_content end -->
+
+	<!-- jQuery/Javascript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+	<script src="../../js/burgermenu.js"></script>
+	<script src="../../js/switch_buttons.js"></script>
+	<script src="../../js/fixed_header.js"></script>
+
+</body>
+</html>
